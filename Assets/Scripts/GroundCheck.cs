@@ -9,7 +9,7 @@ public class GroundCheck : MonoBehaviour
     {
 
         Ray ray = new Ray(transform.position, Vector3.down);
-        if (Physics.Raycast(ray, out RaycastHit hit, 1.0f) )
+        if (Physics.Raycast(ray, out RaycastHit hit, 0.5f) )
         {
             return true;
         }
